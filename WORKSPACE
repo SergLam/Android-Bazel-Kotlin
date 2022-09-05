@@ -35,7 +35,7 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
 
 maven_install(
     artifacts = [
-        "androidx.appcompat:appcompat:1.0.2",
+        "androidx.appcompat:appcompat:1.3.0",
         "androidx.fragment:fragment:1.0.0",
         "androidx.core:core:1.0.1",
         "androidx.lifecycle:lifecycle-runtime:2.0.0",
@@ -53,8 +53,6 @@ maven_install(
     ],
     fetch_sources = True,
 )
-
-load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 kotlin_version = "1.3.61"
 kotlin_release_sha = "3901151ad5d94798a268d1771c6c0b7e305a608c2889fc98a674802500597b1c"
